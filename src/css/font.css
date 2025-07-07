@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Source';
+    src: url('../assets/fonts/SourceSerif4-Light.ttf') format('sans-serif');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url('../assets/fonts/SourceSerif4-LightItalic.ttf') format('sans-serif');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url('../assets/fonts/SourceSerif4-Regular.ttf') format('sans-serif');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url('../assets/fonts/SourceSerif4-Medium.ttf') format('sans-serif');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url('../assets/fonts/SourceSerif4-MediumItalic.ttf') format('sans-serif');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url('../assets/fonts/SourceSerif4-SemiBold.ttf') format('sans-serif');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url('../assets/fonts/SourceSerif4-SemiBoldItalic.ttf') format('sans-serif');
+    font-weight: 600;
+    font-style: italic;
+}

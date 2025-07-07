@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+@import './font.css';
+
+@theme{
+    --spacing-s-xs: 8px;
+    --spacing-s-sm: 13px;
+    --spacing-s-md: 21px;
+    --spacing-s-lg: 34px;
+    --spacing-s-xl: 55px;
+
+    --radius-rad-xs: 8px;
+    --radius-rad-sm: 13px;
+    --radius-rad-md: 21px;
+    --radius-rad-lg: 24px;
+    --radius-rad-xl: 55px;
+
+
+    --width-wt-xxs: 165px; 
+    --width-wt-xs: 267px; 
+    --width-wt-sm: 432px; 
+    --width-wt-md: 699px; 
+    --width-wt-lg: 1131px; 
+    --width-wt-xl: 1830px;
+    --width-wt-xxl: 2691px;
+
+    --height-ht-xxs: 165px; 
+    --height-ht-xs: 267px; 
+    --height-ht-sm: 432px; 
+    --height-ht-md: 699px; 
+    --height-ht-lg: 1131px; 
+    --height-ht-xl: 1830px;
+    --height-ht-xxl: 2691px;
+
+    --color-gold-1: #ED9455;
+    --color-gold-2: #FFBB70;
+    --color-gold-3: #FFEC9E;
+    --color-gold-4: #FFFBDA;
+
+    --color-dark-1: #222831;
+    --color-dark-2: #393E46;
+    --color-dark-3: #948979;
+    --color-dark-4: #DFD0B8;
+
+    --font-source: 'Source', sans-serif;
+    --font-c-light: 300;
+    --font-c-regular: 400;
+    --font-c-medium: 500;
+    --font-c-semibold: 600;
+}

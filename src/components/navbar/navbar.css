@@ -1,0 +1,7 @@
+@import '../../css/theme.css';
+
+.navbar-container{
+    position: relative;
+    background-color: var(--color-dark-1);
+    background: linear-gradient(var(--color-dark-1), black);
+}
