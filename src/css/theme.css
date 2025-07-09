@@ -46,4 +46,6 @@
     --font-c-regular: 400;
     --font-c-medium: 500;
     --font-c-semibold: 600;
+
+    --container-c-md: 1185px;
 }
