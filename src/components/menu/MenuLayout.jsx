@@ -7,7 +7,7 @@ export default function MenuLayout() {
         name: 'Beer - Heineken',
         ingredients: 'Water, malted barley, hops, Heineken A-yeast',
         description: 'A world-famous lager with a crisp, balanced taste and mild bitterness. Smooth and refreshing—perfect for any occasion.',
-        img: './src/assets/beerImg.webp',
+        img: './src/assets/beerImg.jpg',
     }, {
         name: 'Whiskey - Jack Daniels',
         ingredients: 'Corn, rye, malted barley, pure spring water',
@@ -23,6 +23,26 @@ export default function MenuLayout() {
         ingredients: 'Juniper, coriander, angelica root, citrus peel, and other botanicals',
         description: 'Classic London Dry gin with bold juniper, citrus, and subtle spice. Ideal for timeless cocktails like the Gin & Tonic.',
         img: './src/assets/ginImg.jpg',
+    }, {
+        name: 'Aperol Spritz',
+        ingredients: 'Aperol, prosecco, soda water, orange slice',
+        description: 'A refreshing blend of bitter orange, herbs, and sparkling prosecco. Light, bubbly, and perfect for sunny moments.',
+        img: './src/assets/aperolSpritz.jpg',
+    }, {
+        name: 'Negroni',
+        ingredients: 'Gin, Campari, sweet vermouth, orange garnish',
+        description: 'Bold and bitter-sweet, with herbal depth and a smooth finish. A true classic for the refined palate.',
+        img: './src/assets/negroni.jpg',
+    }, {
+        name: 'Mojito',
+        ingredients: 'White rum, fresh mint, lime juice, sugar, soda water',
+        description: 'Light, minty, and citrusy—this Cuban classic is as refreshing as it gets. A summer favorite.',
+        img: './src/assets/mojito.jpg',
+    }, {
+        name: 'Old Fashioned',
+        ingredients: 'Bourbon or rye whiskey, sugar, Angostura bitters, orange peel',
+        description: 'Rich, smooth, and spirit-forward. A timeless blend of whiskey, sugar, and bitters with a citrus twist.',
+        img: './src/assets/oldFashioned.jpg',
     }]
 
     return(
@@ -52,7 +72,7 @@ export default function MenuLayout() {
                         <div className="absolute h-[2px] w-full bg-gold-1 bottom-0 "></div>
                     </div>
                 </div>
-                <div className="menu-body w-full h-[90%] flex">
+                <div className="menu-body w-full h-fit flex relative">
                     <div className="menu-seperator-container absolute h-full w-[10%] left-1/2 -translate-x-[50%] hidden
                     md:hidden
                     lg:block
