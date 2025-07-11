@@ -1,7 +1,18 @@
 
 import DrinkCard from '../drinkcard/DrinkCard.jsx';
+import { useEffect, useState } from 'react';
 
 export default function MenuLayout() {
+
+    const [dotCount, setDotCount] = useState(0);
+
+    useEffect(() => {
+        const menuBody = document.querySelector('.menu-body');
+        if(menuBody) {
+            const tempDotCount = Math.ceil(menuBody.scrollWidth / window.innerWidth);
+            setDotCount(tempDotCount);
+        }
+    }, [])
 
     const drinkList = [{
         name: 'Beer - Heineken',
@@ -46,53 +57,35 @@ export default function MenuLayout() {
     }]
 
     return(
-        <div className="menu-layout-container flex w-full h-full mt-10">
-            <div className="menu-layout-left w-[5%] h-full flex items-center justify-center">
-                <div className="left-arrow-container w-full aspect-square rounded-full pt-[25%] relative hidden">
-                    <div className="arrow-label-container text-gold-4 w-full absolute top-[-4px] left-1/2 -translate-x-1/4 text-lg font-c-source font-c-light">Food</div>
-                    <div className="arrow-shape-container relative">
-                        <span className="arrow-head absolute w-[15px] h-[2px] bg-gold-1 rotate-225 translate-y-[6px] left-[calc(30%-16px)] "></span>
-                        <span className="arrow-head absolute w-[60px] h-[2px] bg-gold-1 left-[calc(30%-15px)] "></span>
-                    </div>
+        <div className='menu-layout-container h-fit w-full pt-25 relative'>
+            <div className='menu-header w-full h-fit relative'>
+                <div className='menu-header-content absolute top-[15%] left-[20%] w-[35%] h-[90%] text-white '>
+                    <h3 className='text-2xl'>Our Drinks</h3>
+                    <p className='text-sm pt-4'>Discover our handcrafted cocktails: a blend of timeless classics and bold new flavors.
+                        Whether you're here to unwind or celebrate, there's a drink waiting just for you.</p>
                 </div>
             </div>
-            <div className="menu-layout-main w-[90%] h-full">
-                <div className="menu-header w-full h-[10%] flex">
-                    <div className="left-deco w-[45%] h-full relative ">
-                        <div className="absolute h-[2px] w-full bg-gold-1 bottom-0 "></div>
-                    </div>
-                    <div className="mid-deco bg-black w-[10%] h-full flex items-end justify-center relative overflow-hidden ">
-                        <div className="absolute h-[2px] w-[16%] bottom-0 left-0 bg-gold-1 " ></div>
-                        <div className="absolute h-[2px] w-[16%] bottom-0 right-0 bg-gold-1 " ></div>
-                        <div className="absolute w-[50%] aspect-square border-[2px] border-gold-1 rotate-45 "></div>
-                        <div className="absolute w-[50%] aspect-square border-[2px] border-gold-1 translate-y-[50%] rotate-45 " ></div>
-                        <div className="absolute w-[2px] h-full bg-gold-1 "></div>
-                    </div>
-                    <div className="right-deco relative w-[45%] h-full ">
-                        <div className="absolute h-[2px] w-full bg-gold-1 bottom-0 "></div>
-                    </div>
-                </div>
-                <div className="menu-body w-full h-fit flex relative">
-                    <div className="menu-seperator-container absolute h-full w-[10%] left-1/2 -translate-x-[50%] hidden
-                    md:hidden
-                    lg:block
-                    xl:block
-                    2xl:block">
-                        <div className="absolute h-full w-[2px] bg-gold-1 left-1/2 bottom-0 -translate-x-[1px] "></div>
-                    </div>
-                    <div className="menu-element-container h-fit w-full flex flex-wrap gap-[10%] items-center justify-center ">
-                        {drinkList.map((drink, index) => {
-                            return <DrinkCard key={index} drink={ drink } />
+            <div className='menu-body flex flex-1 gap-120 mt-50 overflow-hidden ml-25'>
+                {drinkList.map((drink, index) => {
+                    return <DrinkCard key={index} drink={ {...drink, index:index} } />
+                })}
+            </div>
+            <div className='navigation-buttons-container absolute left-3/4 -translate-x-1/2 mt-10 w-[25%] h-20 '>
+                <div className='navigation-elements flex'>
+                    <div className='navigation-dots w-[75%] flex gap-5 items-center justify-end mr-4'>
+                        {[...new Array(dotCount)].map((_, index) => {
+                            console.log(dotCount);
+                            console.log("TEST -->", _);
+                            return <span key={index} className='w-1 h-1 bg-gold-4/20 rounded-full inline-block'></span>
                         })}
                     </div>
-                </div>
-            </div>
-            <div className="menu-layout-right w-[5%] h-full flex items-center justify-center">
-                <div className="right-arrow-container w-full aspect-square rounded-full pt-[25%] relative hidden ">
-                    <div className="arrow-label-container text-gold-4 w-full absolute top-[-4px] left-1/2 -translate-x-1/5 text-lg font-c-source font-c-light">Food</div>
-                    <div className="arrow-shape-container relative">
-                        <span className="arrow-head absolute w-[15px] h-[2px] bg-gold-1 rotate-135 translate-y-[6px] right-[calc(30%-16px)] "></span>
-                        <span className="arrow-head absolute w-[60px] h-[2px] bg-gold-1 right-[calc(30%-15px)] "></span>
+                    <div className='navigation-arrows flex gap-2'>
+                        <div className='left-arrow relative border-[1px] w-[30px] h-[30px] rounded-full bg-gold-1/20 '>
+                            <span className='absolute border-l-[2px] top-[9px] left-[11px] border-t-[2px] rotate-315 border-gold-4 w-[10px] h-[10px] '></span>
+                        </div>
+                        <div className='right-arrow relative border-[1px] w-[30px] h-[30px] rounded-full bg-gold-1/20 ' style={{borderColor: 'var(--color-gold-1)'}}>
+                            <span className='absolute border-r-[2px] top-[9px] left-[7px] border-b-[2px] rotate-315 border-gold-4 w-[10px] h-[10px] '></span>
+                        </div>
                     </div>
                 </div>
             </div>
