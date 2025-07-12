@@ -17,20 +17,20 @@ export default function MenuLayout() {
     }, [])
 
     const drinkList = [{
-        name: 'Beer - Heineken',
-        ingredients: 'Water, malted barley, hops, Heineken A-yeast',
-        description: 'A world-famous lager with a crisp, balanced taste and mild bitterness. Smooth and refreshing—perfect for any occasion.',
-        img: './src/assets/beerImg.jpg',
+        name: 'Whiskey Sour',
+        ingredients: 'Bourbon whiskey, fresh lemon juice, simple syrup, egg white (optional), Angostura bitters',
+        description: 'A perfectly balanced cocktail combining the boldness of bourbon with the brightness of lemon and a silky smooth finish. Classic, refreshing, and timeless.',
+        img: './src/assets/whiskeySourImg.webp',
     }, {
-        name: 'Whiskey - Jack Daniels',
-        ingredients: 'Corn, rye, malted barley, pure spring water',
-        description: 'Smooth, charcoal-mellowed whiskey with notes of vanilla, oak, and a hint of caramel. A classic American spirit.',
-        img: './src/assets/whiskeyImg.jpg',
+        name: 'Tom Collins',
+        ingredients: 'Gin, fresh lemon juice, simple syrup, soda water, lemon wheel, cherry',
+        description: 'A tall, bubbly classic that’s citrusy, crisp, and endlessly refreshing. Perfect for sunny afternoons or a light evening sip.',
+        img: './src/assets/tomCollinsImg.jpg',
     }, {
-        name: 'Vodka - Absolute',
-        ingredients: 'Water, winter wheat',
-        description: 'Clean and smooth with subtle grain notes. Perfect for cocktails or straight-up enjoyment.',
-        img: './src/assets/vodkaImg.jpg',
+        name: 'Mai Tai',
+        ingredients: 'White rum, dark rum, lime juice, orange curaçao, orgeat syrup',
+        description: 'A tropical classic bursting with citrus, almond, and rich rum flavors. Refreshing, vibrant, and perfect for a taste of island paradise.',
+        img: './src/assets/maiTaiImg.jpg',
     }, {
         name: 'Gin - Beefeater',
         ingredients: 'Juniper, coriander, angelica root, citrus peel, and other botanicals',
@@ -64,7 +64,7 @@ export default function MenuLayout() {
             <div className='menu-header w-full h-fit relative'>
                 <div className='menu-header-content pl-5 top-[15%] left-[20%] w-[100%] h-[90%] text-white 
                 xl:w-[35%] xl:absolute xl:pl-0'>
-                    <h3 className='text-2xl'>Our Drinks</h3>
+                    <h3 className='text-5xl font-c-source'>Our Drinks</h3>
                     <p className='text-sm pt-4'>Discover our handcrafted cocktails: a blend of timeless classics and bold new flavors.
                         Whether you're here to unwind or celebrate, there's a drink waiting just for you.</p>
                 </div>
