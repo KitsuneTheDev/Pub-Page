@@ -20,42 +20,42 @@ export default function MenuLayout() {
         name: 'Whiskey Sour',
         ingredients: 'Bourbon whiskey, fresh lemon juice, simple syrup, egg white (optional), Angostura bitters',
         description: 'A perfectly balanced cocktail combining the boldness of bourbon with the brightness of lemon and a silky smooth finish. Classic, refreshing, and timeless.',
-        img: '/src/assets/whiskeySourImg.webp',
+        img: 'src/assets/whiskeySourImg.webp',
     }, {
         name: 'Tom Collins',
         ingredients: 'Gin, fresh lemon juice, simple syrup, soda water, lemon wheel, cherry',
         description: 'A tall, bubbly classic that’s citrusy, crisp, and endlessly refreshing. Perfect for sunny afternoons or a light evening sip.',
-        img: '/src/assets/tomCollinsImg.jpg',
+        img: 'src/assets/tomCollinsImg.jpg',
     }, {
         name: 'Mai Tai',
         ingredients: 'White rum, dark rum, lime juice, orange curaçao, orgeat syrup',
         description: 'A tropical classic bursting with citrus, almond, and rich rum flavors. Refreshing, vibrant, and perfect for a taste of island paradise.',
-        img: '/src/assets/maiTaiImg.jpg',
+        img: 'src/assets/maiTaiImg.jpg',
     }, {
         name: 'Gin - Beefeater',
         ingredients: 'Juniper, coriander, angelica root, citrus peel, and other botanicals',
         description: 'Classic London Dry gin with bold juniper, citrus, and subtle spice. Ideal for timeless cocktails like the Gin & Tonic.',
-        img: '/src/assets/ginImg.jpg',
+        img: 'src/assets/ginImg.jpg',
     }, {
         name: 'Aperol Spritz',
         ingredients: 'Aperol, prosecco, soda water, orange slice',
         description: 'A refreshing blend of bitter orange, herbs, and sparkling prosecco. Light, bubbly, and perfect for sunny moments.',
-        img: '/src/assets/aperolSpritz.jpg',
+        img: 'src/assets/aperolSpritz.jpg',
     }, {
         name: 'Negroni',
         ingredients: 'Gin, Campari, sweet vermouth, orange garnish',
         description: 'Bold and bitter-sweet, with herbal depth and a smooth finish. A true classic for the refined palate.',
-        img: '/src/assets/negroni.jpg',
+        img: 'src/assets/negroni.jpg',
     }, {
         name: 'Mojito',
         ingredients: 'White rum, fresh mint, lime juice, sugar, soda water',
         description: 'Light, minty, and citrusy—this Cuban classic is as refreshing as it gets. A summer favorite.',
-        img: '/src/assets/mojito.jpg',
+        img: 'src/assets/mojito.jpg',
     }, {
         name: 'Old Fashioned',
         ingredients: 'Bourbon or rye whiskey, sugar, Angostura bitters, orange peel',
         description: 'Rich, smooth, and spirit-forward. A timeless blend of whiskey, sugar, and bitters with a citrus twist.',
-        img: '/src/assets/oldFashioned.jpg',
+        img: 'src/assets/oldFashioned.jpg',
     }]
 
     return(
