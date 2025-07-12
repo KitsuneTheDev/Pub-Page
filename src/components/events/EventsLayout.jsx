@@ -1,5 +1,6 @@
 
 import EventsCard from "./EventsCard.jsx";
+import ReservationButton from '../common/ReservationButton.jsx';
 
 export default function EventsLayout() {
 
@@ -69,7 +70,7 @@ export default function EventsLayout() {
                         backgroundImage: `
                         radial-gradient(circle at center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
                         linear-gradient(to bottom, rgb(0 0 0 / 0), rgb(0 0 0 / 0), rgb(0 0 0 / 0), rgb(0 0 0 / 0), rgb(0 0 0 / 25)),
-                        url('./src/assets/eventsBalloons.png')
+                        url('/src/assets/eventsBalloons.png')
                         `,
                         backgroundRepeat: 'cover, no-repeat',
                         backgroundSize: '100%, 100%',
@@ -81,6 +82,7 @@ export default function EventsLayout() {
                     <h3 className="text-4xl font-c-source mb-4">Parties at Thistle</h3>
                     <p>Our events are all about good energy, friendly faces, and great times. Enjoy unique cocktails crafted in-house and delicious bar food made to share.
                         Whether you're here to relax or celebrate, there's always something happening. Come be part of the vibe.</p>
+                    <ReservationButton />
                 </div>
             </div>
             <div className="events-layout-upcoming flex justify-center items-center pt-25 relative">
