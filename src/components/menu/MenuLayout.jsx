@@ -1,10 +1,12 @@
 
 import DrinkCard from '../drinkcard/DrinkCard.jsx';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import MenuNavigator from './MenuNavigator.jsx';
 
 export default function MenuLayout() {
 
     const [dotCount, setDotCount] = useState(0);
+    const scrollRef = useRef();
 
     useEffect(() => {
         const menuBody = document.querySelector('.menu-body');
@@ -57,38 +59,24 @@ export default function MenuLayout() {
     }]
 
     return(
+        <>
         <div className='menu-layout-container h-fit w-full pt-25 relative'>
             <div className='menu-header w-full h-fit relative'>
-                <div className='menu-header-content absolute top-[15%] left-[20%] w-[35%] h-[90%] text-white '>
+                <div className='menu-header-content pl-5 top-[15%] left-[20%] w-[100%] h-[90%] text-white 
+                xl:w-[35%] xl:absolute xl:pl-0'>
                     <h3 className='text-2xl'>Our Drinks</h3>
                     <p className='text-sm pt-4'>Discover our handcrafted cocktails: a blend of timeless classics and bold new flavors.
                         Whether you're here to unwind or celebrate, there's a drink waiting just for you.</p>
                 </div>
             </div>
-            <div className='menu-body flex flex-1 gap-120 mt-50 overflow-hidden ml-25'>
+            <div className='menu-body flex flex-1 gap-40 mt-10 overflow-hidden ml-5
+            xl:mt-50 xl:ml-25 xl:gap-120' ref={scrollRef}>
                 {drinkList.map((drink, index) => {
                     return <DrinkCard key={index} drink={ {...drink, index:index} } />
                 })}
             </div>
-            <div className='navigation-buttons-container absolute left-3/4 -translate-x-1/2 mt-10 w-[25%] h-20 '>
-                <div className='navigation-elements flex'>
-                    <div className='navigation-dots w-[75%] flex gap-5 items-center justify-end mr-4'>
-                        {[...new Array(dotCount)].map((_, index) => {
-                            console.log(dotCount);
-                            console.log("TEST -->", _);
-                            return <span key={index} className='w-1 h-1 bg-gold-4/20 rounded-full inline-block'></span>
-                        })}
-                    </div>
-                    <div className='navigation-arrows flex gap-2'>
-                        <div className='left-arrow relative border-[1px] w-[30px] h-[30px] rounded-full bg-gold-1/20 '>
-                            <span className='absolute border-l-[2px] top-[9px] left-[11px] border-t-[2px] rotate-315 border-gold-4 w-[10px] h-[10px] '></span>
-                        </div>
-                        <div className='right-arrow relative border-[1px] w-[30px] h-[30px] rounded-full bg-gold-1/20 ' style={{borderColor: 'var(--color-gold-1)'}}>
-                            <span className='absolute border-r-[2px] top-[9px] left-[7px] border-b-[2px] rotate-315 border-gold-4 w-[10px] h-[10px] '></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        <MenuNavigator dotCount={dotCount} scrollRef={scrollRef} />
+        </>
     );
 }
