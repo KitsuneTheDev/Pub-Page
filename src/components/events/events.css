@@ -5,12 +5,24 @@
     url('/events.png'),
     url('/eventsBanner.jpg');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: center, center, bottom, top;
+    background-position: center, center, top, 50% 47%;
     background-size: 100%, 100%, contain, 80%;
+}
+
+.custom-margin {
+    margin-left: 40px;
+    margin-top: 0px;
+}
+
+@media(max-width: 1024px) {
+    .event-card-container{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
 }
 
 @media(min-width: 1024px) {
     .events-container {
-        background-position: 50%, 50%, top, bottom;
+        background-position: center, center, top, bottom;
     }
 }

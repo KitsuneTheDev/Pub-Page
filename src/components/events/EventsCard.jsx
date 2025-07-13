@@ -1,16 +1,15 @@
+import './events.css';
+
 export default function ({ event, index }) {
     
-    let marginLeft = 0;
+    let customMargin = "";
 
-    if(index % 4 === 0 || index % 4 === 3) marginLeft = 40;
+    if(index % 4 === 0 || index % 4 === 3) customMargin = "custom-margin";
 
     console.log(event);
 
     return(
-        <div className={`event-card-container w-100 h-20 flex ml-0 mt-5
-        lg:ml-[${marginLeft}px] lg:mt-0
-        xl:ml-[${marginLeft}px] xl:mt-0
-        2xl:ml-[${marginLeft}px] 2xl:mt-0`}>
+        <div className={`event-card-container w-100 h-20 flex mt-0 ${customMargin}`}>
             <div className="event-card-left w-15 h-full relative">
                 <div className="date-info absolute top-[5%] right-0 font-c-source text-md text-gold-1/70">{event.date}</div>
             </div>

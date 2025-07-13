@@ -1,5 +1,5 @@
 
-import DrinkCard from '../drinkcard/DrinkCard.jsx';
+import DrinkCard from './DrinkCard.jsx';
 import { useEffect, useState, useRef } from 'react';
 import MenuNavigator from './MenuNavigator.jsx';
 
