@@ -1,5 +1,5 @@
 .menu-container{
-    background-image: linear-gradient(180deg, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8)), url('../../assets/our_drinks.png');
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8)), url('/our_drinks.png');
     background-repeat: no-repeat, no-repeat;
     background-position: 50%, center -20%;
     background-size: 100%, 100%;

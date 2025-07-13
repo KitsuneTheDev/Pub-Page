@@ -70,7 +70,7 @@ export default function EventsLayout() {
                         backgroundImage: `
                         radial-gradient(circle at center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
                         linear-gradient(to bottom, rgb(0 0 0 / 0), rgb(0 0 0 / 0), rgb(0 0 0 / 0), rgb(0 0 0 / 0), rgb(0 0 0 / 25)),
-                        url('/src/assets/eventsBalloons.png')
+                        url('/eventsBalloons.png')
                         `,
                         backgroundRepeat: 'cover, no-repeat',
                         backgroundSize: '100%, 100%',
