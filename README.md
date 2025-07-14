@@ -1,12 +1,53 @@
-# React + Vite
+# Pub Web Page 🍺
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stylish, single-page pub website built with React, Tailwind CSS, and Framer Motion — designed to showcase drinks, events, and the welcoming atmosphere of a local pub.
 
-Currently, two official plugins are available:
+---
+# Web - Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[ThistleWeb](/src/assets/demo/thistle_web.png)
+[ThistleWeb](/src/assets/demo/thistle_web_2.png)
+[ThistleWeb](/src/assets/demo/thistle_web_3.png)
 
-## Expanding the ESLint configuration
+# Mobile - Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[ThistleMobile](/src/assets/demo/thistle_mobile.png)
+[ThistleMobile](/src/assets/demo/thistle_mobile_2.png)
+[ThistleMobile](/src/assets/demo/thistle_mobile_3.png)
+---
+
+## 🚀 Features
+
+- ✨ Hero section with pub introduction
+- 🍸 Menu section with detailed cocktail cards
+- 🎶 Event list with interactive reservation overlay
+- 📱 Responsive design with smooth animations
+- 🟡 Scroll-based navigation dots for horizontal drink list
+
+---
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Vite](https://vitejs.dev/) (for fast local development)
+
+---
+
+## 📂 Folder Structure
+```
+src/
+│
+├── assets/ → Drink and pub images
+├── components/
+│ ├── DrinkCard.jsx
+│ ├── EventCard.jsx
+│ └── NavigationDots.jsx
+│
+├── pages/
+│ └── MenuLayout.jsx
+│
+├── App.jsx
+└── main.jsx
+```
