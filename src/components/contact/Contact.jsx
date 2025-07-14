@@ -18,8 +18,8 @@ export default function Contact() {
                 <div className='body-left text-white/70 flex flex-col justify-center items-start pl-5 gap-5 w-[50%]
                 md:pl-20
                 xl:pl-50'>
-                    <p><span className='text-lg'>Email - </span>thistlepub@gmail.com</p>
-                    <p><span className='text-lg'>Phone - </span>(412)-1204-10-785714</p>
+                    <p><span className='text-lg'>Email - </span>thistlefoodndrink@gmail.com</p>
+                    <p><span className='text-lg'>Phone - </span>(000)-0000-00-000000</p>
                 </div>
                 <div className='body-right text-white/70 flex flex-col justify-center items-center gap-5 w-[50%] pr-5
                 md:pr-2
