@@ -5,15 +5,15 @@ A stylish, single-page pub website built with React, Tailwind CSS, and Framer Mo
 ---
 # Web - Demo
 
-[ThistleWeb](/src/assets/demo/thistle_web.png)
-[ThistleWeb](/src/assets/demo/thistle_web_2.png)
-[ThistleWeb](/src/assets/demo/thistle_web_3.png)
+![ThistleWeb](/src/assets/demo/thistle_web.png)
+![ThistleWeb](/src/assets/demo/thistle_web_2.png)
+![ThistleWeb](/src/assets/demo/thistle_web_3.png)
 
 # Mobile - Demo
 
-[ThistleMobile](/src/assets/demo/thistle_mobile.png)
-[ThistleMobile](/src/assets/demo/thistle_mobile_2.png)
-[ThistleMobile](/src/assets/demo/thistle_mobile_3.png)
+![ThistleMobile](/src/assets/demo/thistle_mobile.png)
+![ThistleMobile](/src/assets/demo/thistle_mobile_2.png)
+![ThistleMobile](/src/assets/demo/thistle_mobile_3.png)
 ---
 
 ## 🚀 Features
